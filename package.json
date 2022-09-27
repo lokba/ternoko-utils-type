@@ -2,10 +2,13 @@
   "name": "ternoko-utils-type",
   "version": "0.0.3",
   "description": "터놓고 프로젝트에서 사용되는 범용 타입 모듈입니다.",
-  "main": "index.js",
+  "main": "src/index.ts",
   "scripts": {
     "build": "rm -rf ./dist && tsc --build",
     "deploy": "rm -rf ./dist && tsc --build; npm version patch; npm publish --access=public"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3"
   },
   "repository": {
     "type": "git",
@@ -17,13 +20,14 @@
     "kimsanglok <evertree60341@gmail.com> (https://github.com/lokba)"
   ],
   "private": false,
+  "keywords": [
+    "types",
+    "typescript"
+  ],
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/lokba/ternoko-utils-type/issues"
   },
   "homepage": "https://github.com/lokba/ternoko-utils-type#readme",
-  "types": "./dist/index.d.ts",
-  "devDependencies": {
-    "typescript": "^4.8.3"
-  }
+  "types": "./dist/index.d.ts"
 }
