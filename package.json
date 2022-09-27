@@ -1,0 +1,29 @@
+{
+  "name": "ternoko-utils-type",
+  "version": "0.0.2",
+  "description": "터놓고 프로젝트에서 사용되는 범용 타입 모듈입니다.",
+  "main": "index.js",
+  "scripts": {
+    "build": "rm -rf ./dist && tsc --build",
+    "deploy": "rm -rf ./dist && tsc --build; npm version patch; npm publish --access=public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokba/ternoko-utils-type.git"
+  },
+  "author": "lokba & arnold",
+  "contributors": [
+    "hansoobin <qajjang46@gmail.com> (https://github.com/sanaandmomo)",
+    "kimsanglok <evertree60341@gmail.com> (https://github.com/lokba)"
+  ],
+  "private": false,
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lokba/ternoko-utils-type/issues"
+  },
+  "homepage": "https://github.com/lokba/ternoko-utils-type#readme",
+  "types": "./dist/index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.8.3"
+  }
+}
